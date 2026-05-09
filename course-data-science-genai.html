@@ -24,16 +24,38 @@
     <h2 id="stepTitle"></h2>
     <p id="stepGoal"></p>
 
-    <h3>Notes</h3>
-    <ul id="stepNotes"></ul>
+    <div class="tabs" role="tablist" aria-label="Topic sections">
+      <button class="tab active" data-tab="learn" role="tab">Learn</button>
+      <button class="tab" data-tab="watch" role="tab">Watch</button>
+      <button class="tab" data-tab="quiz" role="tab">Quiz</button>
+    </div>
 
-    <h3>Watch (popular/recent)</h3>
-    <div id="stepVideos" class="links"></div>
+    <div id="panel-learn" class="tab-panel active" role="tabpanel">
+      <h3>Concepts</h3>
+      <div id="stepLearnText"></div>
+      <h3>Key Notes</h3>
+      <ul id="stepNotes"></ul>
+    </div>
 
-    <h3>Quick Quiz</h3>
-    <div id="stepQuiz" class="quiz"></div>
+    <div id="panel-watch" class="tab-panel" role="tabpanel">
+      <h3>Embedded Video</h3>
+      <div class="video-wrap">
+        <iframe id="ytPlayer" src="" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <h4>More recommended videos</h4>
+      <div id="stepVideos" class="links"></div>
+    </div>
 
-    <button id="markDone">Mark as done</button>
+    <div id="panel-quiz" class="tab-panel" role="tabpanel">
+      <h3>Quick Quiz</h3>
+      <div id="stepQuiz" class="quiz"></div>
+      <button id="markDone">Mark topic as done</button>
+    </div>
+
+    <div class="wizard-nav">
+      <button id="prevBtn">← Previous</button>
+      <button id="nextBtn">Next →</button>
+    </div>
   </section>
 </main>
 <script src="script.js"></script>
