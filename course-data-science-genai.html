@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Science with Gen AI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <h1>Data Science with Gen AI</h1>
+  <p>Self-paced learning path inspired by Innomatics curriculum + modern GenAI stack</p>
+  <a href="index.html">← Back to streams</a>
+</header>
+<main class="container layout">
+  <aside class="card">
+    <h2>Course Roadmap</h2>
+    <div class="progress" aria-label="Course progress"><div id="progressBar"></div></div>
+    <p id="progressText">0% completed</p>
+    <ul id="stepList" class="step-list"></ul>
+  </aside>
+
+  <section class="card">
+    <h2 id="stepTitle"></h2>
+    <p id="stepGoal"></p>
+
+    <h3>Notes</h3>
+    <ul id="stepNotes"></ul>
+
+    <h3>Watch (popular/recent)</h3>
+    <div id="stepVideos" class="links"></div>
+
+    <h3>Quick Quiz</h3>
+    <div id="stepQuiz" class="quiz"></div>
+
+    <button id="markDone">Mark as done</button>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
